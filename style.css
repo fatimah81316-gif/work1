@@ -3,20 +3,82 @@ body{
     direction: rtl;
     padding: 20px;
 }
-#taskInputt{
-    padding:8px;
-    width: 200px;
+input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
-button{
-    border: none;
-    padding: 12px 30 px;
-    margin-right: 5px;
-    cursor: pointer;
-    background:linear-gradient(135PX,#6a11cb,#2575fc) ;
+input[type="text"]:hover {
+  border-color: #ff7e5f;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+input[type="text"]:focus {
+  border-color: #feb47b;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+   /* دکمه اصلی */
+button {
+  background: linear-gradient(135deg, #4CAF50, #81C784);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+button:hover {
+  background: linear-gradient(135deg, #43A047, #66BB6A);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.3); 
+}
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+
+ul button{background: linear-gradient(135deg,#ff7e5f,#feb47b);
     color: white;
-    border-radius: 25px;
-    font-size: 16px;  
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
-ul{
-    margin-top: 15px;
+button:hover{
+    transform: translateY(-3px);
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+button:active{
+    transform: translateY(0);
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+ul li {
+  color: black; 
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 8px; 
+  list-style: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+  transition: all 0.3s ease;
+}
+
+ul li:hover {
+  transform: translateX(5px); 
 }
