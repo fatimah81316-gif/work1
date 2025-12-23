@@ -1,0 +1,22 @@
+body{
+    font-family:sans-serif;
+    direction: rtl;
+    padding: 20px;
+}
+#taskInputt{
+    padding:8px;
+    width: 200px;
+}
+button{
+    border: none;
+    padding: 12px 30 px;
+    margin-right: 5px;
+    cursor: pointer;
+    background:linear-gradient(135PX,#6a11cb,#2575fc) ;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;  
+}
+ul{
+    margin-top: 15px;
+}
